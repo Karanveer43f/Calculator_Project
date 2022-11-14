@@ -1,0 +1,10 @@
+#calculator{
+    max-width: 400px;
+}
+#display-space{
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;;
+    display: flex;
+    justify-content: end;
+}

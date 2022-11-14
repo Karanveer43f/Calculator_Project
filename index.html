@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container py-5 my-5 bg-success px-4 rounded" id="calculator">
+        <div class="row bg-dark py-2 my-3 text-white rounded text-center" id="calculator-heading">
+            <h1>Calculator</h1>
+        </div>
+        <div class="row rounded
+         my-3 bg-light py-2" id="display-space" style="height: 3rem;">
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col border text-center py-2 cal-btn" id="allClear">
+                <a href="#" class="text-decoration-none text-dark" onClick="window.location.reload(true)">
+                    <h6>AC</h6>
+                </a>
+            </div>
+            <div class="col border text-center py-2 cal-btn" id="signChange">
+                <h6>+/-</h6>
+            </div>
+            <div class="col border py-2 text-center operator cal-btn" id="percentage" data-value="%">
+                <h6>%</h6>
+            </div>
+            <div data-value="/" class="col bg-danger text-white border py-2 text-center cal-btn" id="devide">
+                <h6>/</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div data-value="7" class="col border text-center py-2 numbers cal-btn myButton" id="seven">
+                <h6>7</h6>
+            </div>
+            <div data-value="8" class="col border text-center py-2 cal-btn numbers" id="eight">
+                <h6>8</h6>
+            </div>
+            <div data-value="9" class="col border py-2 text-center numbers cal-btn" id="nine">
+                <h6>9</h6>
+            </div>
+            <div data-value="*" class="col bg-danger text-white border py-2 text-center cal-btn operator" id="multiply">
+                <h6>*</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div data-value="4" class="col border text-center py-2 numbers cal-btn" id="four">
+                <h6>4</h6>
+            </div>
+            <div data-value="5" class="col border text-center py-2 numbers cal-btn" id="five">
+                <h6>5</h6>
+            </div>
+            <div data-value="6" class="col border py-2 text-center numbers cal-btn" id="six">
+                <h6>6</h6>
+            </div>
+            <div data-value="-" class="col bg-danger text-white border py-2 text-center cal-btn operator" id="minus">
+                <h6>-</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div data-value="1" class="col border text-center py-2 numbers cal-btn" id="one">
+                <h6>1</h6>
+            </div>
+            <div data-value="2" class="col border text-center py-2 numbers cal-btn" id="tow">
+                <h6>2</h6>
+            </div>
+            <div data-value="3" class="col border py-2 text-center numbers cal-btn" id="three">
+                <h6>3</h6>
+            </div>
+            <div data-value="+" class="col bg-danger text-white border py-2 text-center cal-btn operator" id="plus">
+                <h6>+</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div data-value="0" class="col-6 border text-center py-2 numbers cal-btn" id="zero">
+                <h6>0</h6>
+            </div>
+            <div data-value="." class="col border py-2 text-center cal-btn" id="dot">
+                <h6>.</h6>
+            </div>
+            <div data-value="=" class="col bg-danger text-white border py-2 cal-btn text-center operator" id="equalTo">
+                <h6>=</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
